@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="START" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SCORE:"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorLime"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_puntuacio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/colorLime"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_TIME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TIME:"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorRed"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/contador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="30"
+            android:textAlignment="center"
+            android:textColor="@color/colorRed"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/iv_mosquit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="mosquitapretat"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textSize="30sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</LinearLayout>
